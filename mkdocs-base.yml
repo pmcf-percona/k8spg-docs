@@ -89,14 +89,6 @@ plugins:
   search: 
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 
-  exclude:
-    glob:
-      - "setting-up/client/docker.md"
-  # https://github.com/orzih/mkdocs-with-pdf
-  # Check links - but extends build time significantly
-  # https://pypi.org/project/mkdocs-htmlproofer-plugin/
-  #    htmlproofer: {}
-
 extra: # Used in main.html template and can't be externalized
   edit_page_text: '<i class="uil uil-pen"></i> <b>Edit this page</b>'
   updated_text: '<i class="uil uil-refresh"></i> Page updated'
