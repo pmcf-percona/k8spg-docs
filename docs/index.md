@@ -1,95 +1,47 @@
-# Percona Operator for PostgreSQL
+# Percona Operator for PostgreSQL documentation
 
-!!! note
+The [Percona Operator for PostgreSQL](https://github.com/percona/percona-postgresql-operator) 
+automates the creation, modification, or deletion of items in your Percona
+Distribution for PostgreSQL environment. The Operator contains the necessary
+Kubernetes settings to maintain a consistent PostgreSQL cluster.
 
-    This is version {{ release }} of the Percona Operator for PostgreSQL. 
-    **The Operator 1.x is now in maintenance mode. We strongly recommend to use**
-    [Percona Operator for PostgreSQL 2.x](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html).
-
-
-
-Kubernetes have added a way to manage containerized systems, including database
-clusters. This management is achieved by controllers, declared in configuration
-files. These controllers provide automation with the ability to create objects,
-such as a container or a group of containers called pods, to listen for an
-specific event and then perform a task.
-
-This automation adds a level of complexity to the container-based architecture
-and stateful applications, such as a database. A Kubernetes Operator is a
-special type of controller introduced to simplify complex deployments. The
-Operator extends the Kubernetes API with custom resources.
-
-The [Percona Operator for PostgreSQL](https://github.com/percona/percona-postgresql-operator) is based on best practices for configuration and
+Percona Kubernetes Operator is based on best practices for configuration and
 setup of a Percona Distribution for PostgreSQL cluster. The benefits of the
 Operator are many, but saving time and delivering a consistent and vetted
 environment is key.
 
-# Requirements
+Starting with Percona Kubernetes Operator is easy. Follow our documentation guides, and you'll be set up in a minute.
 
-* [System Requirements](System-Requirements.md)
+<div data-grid markdown><div data-banner markdown>
 
-* [Design and architecture](architecture.md)
+## :material-progress-download: Installation guides { .title }
 
-* [Comparison with other solutions](compare.md)
+Want to see it for yourself? Get started quickly with our step-by-step installation instructions.
 
-# Quickstart guides
+[Quickstart guides :material-arrow-right:](quickstart.md){ .md-button }
 
-* [Install on Minikube](minikube.md)
+</div><div data-banner markdown>
 
-* [Install on Google Kubernetes Engine (GKE)](gke.md)
+## :material-security: Security and encryption { .title }
 
-* [Install with Helm](helm.md)
+Rest assured! Learn more about our security features designed to protect your valuable data.
 
-# Installation guides
+[Security measures :material-arrow-right:](TLS.md){ .md-button }
+</div><div data-banner markdown>
 
-* [Generic Kubernetes installation](kubernetes.md)
+### :material-backup-restore: Backup management { .title }
 
-* [Install on OpenShift](openshift.md)
+Learn what you can do to maintain regular backups of your PostgrgeSQL cluster.
 
-# Configuration
+[Backup management :material-arrow-right:](backups.md){ .md-button }
 
-* [Application and system users](users.md)
+</div><div data-banner markdown>
 
-* [Changing PostgreSQL Options](options.md)
+### :material-frequently-asked-questions: Troubleshooting { .title }
 
-* [Anti-affinity and tolerations](constraints.md)
+Our comprehensive resources will help you overcome challenges, from everyday issues to specific doubts.
 
-* [Transport Encryption (TLS/SSL)](TLS.md)
+[Diagnostics :material-arrow-right:](debug.md){.md-button}
 
-* [Telemetry](telemetry.md)
-
-# Management
-
-* [Backup and restore](backups.md)
-
-* [Upgrade Percona Distribution for PostgreSQL and the Operator](update.md)
-
-* [Horizontal and vertical scaling](scaling.md)
-
-* [Monitor with Percona Monitoring and Management (PMM)](monitoring.md)
-
-* [Restart or pause the cluster](pause.md)
-
-# HOWTOs
-
-* [How to deploy a standby cluster for Disaster Recovery](standby.md)
-
-* [Percona Operator for PostgreSQL single-namespace and multi-namespace deployment](cluster-wide.md)
-
-* [Using PostgreSQL tablespaces with Percona Operator for PostgreSQL](tablespace.md)
-
-* [Creating a private S3-compatible cloud for backups](private.md)
-
-# Reference
-
-* [Custom Resource options](operator.md)
-
-* [Operator installation options](installation-options.md)
-
-* [Percona certified images](images.md)
-
-* [Frequently Asked Questions](faq.md)
-
-* [Old releases (documentation archive)](https://docs.percona.com/legacy-documentation/)
-
-* [Release Notes](ReleaseNotes/index.md)
+</div>
+</div>
